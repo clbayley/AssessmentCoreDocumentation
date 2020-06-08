@@ -2,7 +2,8 @@
 
 User permissions in SmartRubric Assessment Core are worked out based on the groups to which the user belongs.
 
-## Permissions and Default Values for GROUPS
+## Permissions and Default Values for Groups
+
 | Title  | Permission | Default (Admin) | Default (Member) |
 | ------------- | ------------- |------------- |------------- |
 | individuals:admin | Access full personal information about Administrators of the group | None | None |
@@ -13,6 +14,7 @@ User permissions in SmartRubric Assessment Core are worked out based on the grou
 | groupmetadata  | Access detailed metadata about the group | Read/Write | Read |
 | subgrouplist  | Access the list of subgroups in the group | Read/Write | Read |
 
+---
 ## Permission Inheritance
 
 Permissions can cascade from group to subgroup, and you can choose to allow membership in one group to grant permissions in sibling groups.
@@ -51,4 +53,4 @@ This distinction is important because it means you can STOP a permission cascade
 | --> Key Stage | *Head of Key Stage* | READ ONLY | **Local authority** administrators have no access. **School Leaders** have Read Only access to all Key Stages and Year Groups. **Heads of Key Stage** have READ/WRITE access to all Year Groups that belong to their Key Stage  |
 | ---> Year Group | *Head of Year* | READ ONLY | **Local authority** administrators have no access. **School Leaders** have Read Only access to all Year Groups and Tutor Groups. **Heads of Key Stage** have READ/WRITE access to all Tutor Groups that belong to their Key Stage. **Heads of Year** have READONLY access to all Tutor Groups that belong to their year. |
 | ----> Tutor Group | *Form Tutor* | NO | **Local authority** administrators have no access. **School Leaders** have Read Only access to all Tutor Groups and No access to student-led groups. **Heads of Key Stage** have READ/WRITE access to all Tutor Groups that belong to their Key Stage and No access to student-led groups. **Heads of Year** have READONLY access to all Tutor Groups that belong to their year and No access to student-led groups. **Form Tutors** have no access to student-led groups. |
-| -----> Student Led Group | *Student* | NO | Only members of the group have access. Aggregate data only is available up the chain. The name of the group will be visible to anyone with Read access to the parent Tutor Group's ::subgrouplist:: permission|
+| -----> Student Led Group | *Student* | NO | Only members of the group have access. Aggregate data only is available up the chain. The name of the group will be visible to anyone with Read access to the parent Tutor Group's *subgrouplist* permission|
