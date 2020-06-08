@@ -12,7 +12,7 @@ First you have to set up the permissions for your top level ORGANISATION. Top le
 
 > If your organisation contains a number of smaller, independently operated organisations (such as a Local Authority or MAT containing schools, or a Company containing independently operated franchises), you do not need to uncheck 'Inherit Read Access' and 'Inherit Write Access' in Administrator Permissions. Child Organisations of your Parent Organisation should independently set up their own organisational hierarchies, to which you will not have automatic access.
 
-## Creating Subgroups
+## Creating Subgroup Types
 
 Right now, you only have a top level group--your Organisation. To add a Group Type to your hierarchy, (such as a department, office or school), click 'ADD NEW SUBGROUP TYPE'.
 
