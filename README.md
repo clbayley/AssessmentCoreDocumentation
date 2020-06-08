@@ -1,3 +1,3 @@
 # Assessment Core User Guide
 
-> An awesome project.
+> Developed by Pinemarten Education Ltd. 

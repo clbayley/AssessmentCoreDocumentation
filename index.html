@@ -10,12 +10,28 @@
 </head>
 <body>
   <div id="app"></div>
+
   <script>
     window.$docsify = {
       loadSidebar: true,
       logo: '/_media/Squarelogo.png',
       name: '',
-      repo: ''
+      repo: '',
+      plugins: [
+    function(hook) {
+      var footer = [
+        '<hr/>',
+        '<footer>',
+        '<span>Documentation &copy; 2020 by <a href="https://www.smartrubric.com">Pinemarten Education Ltd</a>. </span>',
+        '<span><a href="mailto:info@smartrubric.com">Contact</a></span>',
+        '</footer>'
+      ].join('');
+
+      hook.afterEach(function(html) {
+        return html + footer;
+      });
+    }
+  ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
