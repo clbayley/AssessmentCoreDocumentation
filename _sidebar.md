@@ -1,6 +1,6 @@
 
 * [Assessment Core Platform](/)
-  * [Management Portal](management-portal/README.md)
+  * [Management Portal](management-portal/)
     * [Administrator Quickstart](management-portal/admin-quickstart.md)
     * [Guide to Permissions](management-portal/permissions.md)
     * [Managing User Accounts](management-portal/managing-user-accounts.md)
